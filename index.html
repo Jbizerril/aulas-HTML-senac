@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Casa do Montanhista</title>
+    <script src="index.js" async></script>
+</head>
+
+<body>
+    <div class="notification-banner">
+        Envio grátis para pedidos acima de R$100,00!
+    </div>
+
+    <header>
+        <h1>Casa do Montanhista</h1>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Página inicial</a>
+            <a href="#about">Sobre nós</a>
+            <div class="dropdown">
+                <a href="#products">Produtos</a>
+                <div class="dropdown-content">
+                    <a href="#product1">Acessórios</a>
+                    <a href="#product2">Barracas</a>
+                    <a href="#product3">Botas e calçados</a>
+                    <a href="#product4">Cantis</a>
+                    <a href="#product5">Cordas</a>
+                    <a href="#product6">Cutelaria</a>
+                    <a href="#product7">Lanternas</a>
+                    <a href="#product8">Mochilas</a>
+                    <a href="#product9">Diversos</a>
+                    <a href="#product10">Queima de Estoque</a>
+                    <a href="#product11">Vestuario</a>
+                    <a href="#product12">Outros</a>
+                </div>
+            </div>
+            <a href="#partnerships">Nossos Parceiros</a>
+            <a href="#contact">Entre em contato</a>
+            <a href="#login">Login</a>
+            <a href="#register">Cadastro</a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="buscar produtos..." />
+            <button>buscar</button>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h2>Produtos para todas as atividades esportivas e escaladas</h2>
+        <!-- <p>Tudo que .</p> -->
+
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="images/foto-1.jpg" alt="produto 1" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/foto-2.jpg" alt="Produto 2" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/foto-3.jpg" alt="Produto 3" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/foto-4.jpg" alt="produto 4" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/foto-5.jpg" alt="produto 5" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/foto-6.jpg" alt="produto 6" />
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </section>
+    <section class="map-section">
+        <div class="contact-info">
+            
+            <h3>
+                Venha nos Visitar!
+            </h3>
+            <p>
+                Mal. Hermes, Rio de Janeiro - RJ, 21610-210
+            </p>
+            <h3>
+                Nossos Contatos
+            </h3>
+            <p>
+                Email: Montanhistabr@gmail.com Tel: 21-2121-2121
+            </p>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.4244317957505!2d-43.37379572378666!3d-22.860774536230043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996254d9ca197f%3A0x8199019175fb0676!2sMarechal%20Hermes!5e0!3m2!1spt-BR!2sbr!4v1726522473214!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>
+            © 2024 Casa do montanhista Rio de Janeiro-RJ. todos os direitos
+            reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
